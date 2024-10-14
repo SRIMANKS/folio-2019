@@ -41,7 +41,7 @@ export default class Project
         this.boards.xStart = - 5
         this.boards.xInter = 5
         this.boards.y = 5
-        this.boards.color = '#8e7161'
+        this.boards.color = '#8f7161'
         this.boards.threeColor = new THREE.Color(this.boards.color)
 
         if(this.debug)
@@ -189,7 +189,7 @@ export default class Project
 
         // Area
         this.floor.area = this.areas.add({
-            position: new THREE.Vector2(this.x + this.link.x, this.y + this.floor.y + this.link.y),
+            position: new THREE.Vector2(this.x + this.link.x, this.y + this.floor.y + this.link.y -5),
             halfExtents: new THREE.Vector2(this.link.halfExtents.x, this.link.halfExtents.y)
         })
         this.floor.area.on('interact', () =>
@@ -200,7 +200,7 @@ export default class Project
         // Area label
         this.floor.areaLabel = this.meshes.areaLabel.clone()
         this.floor.areaLabel.position.x = this.link.x
-        this.floor.areaLabel.position.y = this.link.y
+        this.floor.areaLabel.position.y = this.link.y - 5
         this.floor.areaLabel.position.z = 0.001
         this.floor.areaLabel.matrixAutoUpdate = false
         this.floor.areaLabel.updateMatrix()

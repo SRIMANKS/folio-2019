@@ -263,7 +263,7 @@ export default class Controls extends EventEmitter
                 this.touch.joystick.angle.current.x = touch.clientX
                 this.touch.joystick.angle.current.y = touch.clientY
 
-                this.touch.joystick.$limit.style.opacity = '0.5'
+                this.touch.joystick.$limit.style.opacity = '0.5'    
 
                 document.addEventListener('touchend', this.touch.joystick.events.touchend)
                 document.addEventListener('touchmove', this.touch.joystick.events.touchmove, { passive: false })

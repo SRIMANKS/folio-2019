@@ -152,13 +152,13 @@ export default class InformationSection
         this.activities = {}
         this.activities.x = this.x + 0
         this.activities.y = this.y - 10
-        this.activities.multiplier = 5.5
+        this.activities.multiplier = 15
 
         // Geometry
         this.activities.geometry = new THREE.PlaneGeometry(2 * this.activities.multiplier, 1 * this.activities.multiplier, 1, 1)
 
         // Texture
-        this.activities.texture = this.resources.items.informationActivitiesTexture
+        this.activities.texture = this.resources.items.sponsorsTexture
         this.activities.texture.magFilter = THREE.NearestFilter
         this.activities.texture.minFilter = THREE.LinearFilter
 
