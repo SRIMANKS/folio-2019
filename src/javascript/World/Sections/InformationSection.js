@@ -19,7 +19,6 @@ export default class InformationSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-
         this.setLinks()
         this.setActivities()
         this.setTiles()
@@ -36,7 +35,7 @@ export default class InformationSection
         })
     }
 
-   
+    
 
     setLinks()
     {
@@ -60,20 +59,12 @@ export default class InformationSection
         // Options
         this.links.options = [
             {
-                href: 'https://twitter.com/bruno_simon/',
-                labelTexture: this.resources.items.informationContactTwitterLabelTexture
-            },
-            {
-                href: 'https://github.com/brunosimon/',
-                labelTexture: this.resources.items.informationContactGithubLabelTexture
-            },
-            {
-                href: 'https://www.linkedin.com/in/simonbruno77/',
+                href: 'https://www.instagram.com/tedxnittrichy/?hl=en',
                 labelTexture: this.resources.items.informationContactLinkedinLabelTexture
             },
             {
-                href: 'mailto:simon.bruno.77@gmail.com',
-                labelTexture: this.resources.items.informationContactMailLabelTexture
+                href: 'https://www.instagram.com/tedxnittrichy/?hl=en',
+                labelTexture: this.resources.items.informationContactInstagramLabelTexture
             }
         ]
 
@@ -99,8 +90,8 @@ export default class InformationSection
 
             // Texture
             item.texture = _option.labelTexture
-            item.texture.magFilter = THREE.NearestFilter
-            item.texture.minFilter = THREE.LinearFilter
+            // item.texture.magFilter = THREE.NearestFilter
+            // item.texture.minFilter = THREE.LinearFilter
 
             // Create label
             item.labelMesh = new THREE.Mesh(this.links.labelGeometry, new THREE.MeshBasicMaterial({ wireframe: false, color: 0xffffff, alphaMap: _option.labelTexture, depthTest: true, depthWrite: false, transparent: true }))

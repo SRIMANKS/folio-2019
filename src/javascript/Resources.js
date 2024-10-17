@@ -351,6 +351,11 @@ export default class Resources extends EventEmitter {
         type: "texture",
       },
       {
+        name: "informationContactInstagramLabel",
+        source: "./models/information/static/contactInstagramLabel.png",
+        type: "texture",
+      },
+      {
         name: "informationContactLinkedinLabel",
         source: "./models/information/static/contactLinkedinLabel.png",
         type: "texture",
